@@ -1,0 +1,52 @@
+{
+  "name": "meshblu-core-task-enqueue-jobs-for-forward-unregister-received",
+  "version": "1.0.0",
+  "description": "Meshblu core task meshblu-core-task-enqueue-jobs-for-forward-unregister-received",
+  "keywords": [
+    "meshblu",
+    "core",
+    "iot",
+    "task"
+  ],
+  "homepage": "/meshblu-core-task-enqueue-jobs-for-forward-unregister-received",
+  "bugs": "/meshblu-core-task-enqueue-jobs-for-forward-unregister-received/issues",
+  "author": {
+    "name": "",
+    "url": ""
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "/meshblu-core-task-enqueue-jobs-for-forward-unregister-received.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "async": "^2.0.1",
+    "coffee-script": "^1.10.0",
+    "http": "0.0.0",
+    "lodash": "^4.14.2"
+  },
+  "devDependencies": {
+    "@octoblu/redis-ns": "^1.3.1",
+    "chai": "^3.4.1",
+    "chai-subset": "^1.3.0",
+    "coffee-coverage": "^0.7.0",
+    "fakeredis": "^1.0.3",
+    "istanbul": "^0.4.1",
+    "meshblu-core-datastore": "^4.6.1",
+    "meshblu-core-job-manager": "^7.1.0",
+    "mocha": "^2.3.4",
+    "mocha-istanbul": "^0.2.0",
+    "mongojs": "^2.4.0",
+    "sinon": "^1.17.2",
+    "sinon-chai": "^2.8.0"
+  },
+  "peerDependencies": {},
+  "engines": {
+    "node": ">=5.0.0",
+    "npm": ">=2.10.0"
+  },
+  "license": "MIT"
+}
