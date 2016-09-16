@@ -20,7 +20,7 @@
     "url": "/meshblu-core-task-enqueue-jobs-for-forward-unregister-received.git"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "istanbul cover _mocha -- -R spec --require coffee-coverage/register-istanbul && mocha --reporter json > coverage/mocha.json"
   },
   "dependencies": {
     "async": "^2.0.1",
