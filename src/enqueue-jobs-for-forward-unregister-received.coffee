@@ -67,14 +67,14 @@ class EnqueueJobsForForwardUnregisterReceived
 
   _createRequests: (forwarders, {forwardedRoutes, rawData, route, uuid}, callback)=>
     createRequest = async.apply @_createRequest, {forwardedRoutes, rawData, route, uuid}
-    async.eachSeries forwarders, createRequest, callback
+    async.each forwarders, createRequest, callback
 
   _isCircular: ({forwardedRoutes, route}) =>
     return _.some forwardedRoutes, (forwardedRoute) =>
       _.isEqual route, forwardedRoute
 
   _resolveUuids: ({from, to, uuid}, callback) =>
-    async.series {
+    async.parallel {
       from: async.apply @uuidAliasResolver.resolve, from
       to:   async.apply @uuidAliasResolver.resolve, to
       uuid: async.apply @uuidAliasResolver.resolve, uuid
